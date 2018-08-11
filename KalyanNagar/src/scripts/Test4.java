@@ -19,9 +19,6 @@ public class Test4 {
 		ele.sendKeys(Keys.CONTROL+"a");
 		Thread.sleep(2000);
 		ele.sendKeys(Keys.DELETE);
-		//ele.clear();
-		//String text = ele.getAttribute("placeholder");
-		//System.out.println(text);
 		Thread.sleep(3000);
 		driver.close();
 	}
