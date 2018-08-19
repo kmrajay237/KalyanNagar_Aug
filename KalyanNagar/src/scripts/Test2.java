@@ -15,7 +15,7 @@ public class Test2 {
 		driver.findElement(By.id("username")).sendKeys("lochiajay");
 		driver.findElement(By.name("pwd")).sendKeys("zxcv1234");
 		driver.findElement(By.id("loginButton")).click();
-		Wait wait=new FluentWait(driver)
+		Wait<WebDriver> wait=new FluentWait<WebDriver>(driver)
 				.withTimeout(30,TimeUnit.SECONDS)
 				.pollingEvery(5,TimeUnit.SECONDS)
 				.ignoring(Exception.class);
