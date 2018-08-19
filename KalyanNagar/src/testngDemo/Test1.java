@@ -11,15 +11,15 @@ public class Test1 {
 	public void register() {
 		System.out.println("User Registered");
 	}
-	@Test(priority=2)
+	@Test(priority=2,dependsOnMethods= {"register"},alwaysRun=true)
 	public void login() {
 		System.out.println("User Logged in");
 	}
-	@Test(priority=3)
+	@Test(priority=3,invocationCount=3)
 	public void edit() {
 		System.out.println("User Edited");
 	}
-	@Test(priority=4)
+	@Test(priority=4,enabled=false)
 	public void delete() {
 		System.out.println("User Deleted");
 	}
