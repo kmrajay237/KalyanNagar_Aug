@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Social Networking Suite" parallel="tests">
+  <test thread-count="5" name="Social Networking Test In Chrome">
+  <parameter name="MyBrowser" value="chrome"></parameter>
+    <classes>
+      <class name="scripts.TestTwitter"/>
+      <class name="scripts.TestInstagram"/>
+      <class name="scripts.TestLinkedin"/>
+      <class name="scripts.TestFacebook"/>
+    </classes>
+  </test> 
+  
+  
+  <test thread-count="5" name="Social Networking Test In Firefox">
+  <parameter name="MyBrowser" value="firefox"></parameter>
+    <classes>
+      <class name="scripts.TestTwitter"/>
+      <class name="scripts.TestInstagram"/>
+      <class name="scripts.TestLinkedin"/>
+      <class name="scripts.TestFacebook"/>
+    </classes>
+  </test> 
+  
+</suite> <!-- Suite -->
