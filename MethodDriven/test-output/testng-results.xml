@@ -1,17 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="338" started-at="2018-08-25T11:48:32Z" finished-at="2018-08-25T11:48:32Z">
+  <suite name="Default suite" duration-ms="28" started-at="2018-09-01T10:47:12Z" finished-at="2018-09-01T10:47:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="338" started-at="2018-08-25T11:48:32Z" finished-at="2018-08-25T11:48:32Z">
-      <class name="excel.ReadAllData">
-        <test-method status="PASS" signature="read()[pri:0, instance:excel.ReadAllData@11438d26]" name="read" duration-ms="324" started-at="2018-08-25T11:48:32Z" finished-at="2018-08-25T11:48:32Z">
+    <test name="Default test" duration-ms="28" started-at="2018-09-01T10:47:12Z" finished-at="2018-09-01T10:47:12Z">
+      <class name="dataProvider.ProvideData">
+        <test-method status="PASS" signature="dataProviderTest(java.lang.String, java.lang.String)[pri:0, instance:dataProvider.ProvideData@7a1ebcd8]" name="dataProviderTest" duration-ms="5" started-at="2018-09-01T10:47:12Z" data-provider="LoginData" finished-at="2018-09-01T10:47:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- read -->
-      </class> <!-- excel.ReadAllData -->
+        </test-method> <!-- dataProviderTest -->
+        <test-method status="PASS" signature="dataProviderTest(java.lang.String, java.lang.String)[pri:0, instance:dataProvider.ProvideData@7a1ebcd8]" name="dataProviderTest" duration-ms="1" started-at="2018-09-01T10:47:12Z" data-provider="LoginData" finished-at="2018-09-01T10:47:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderTest -->
+        <test-method status="PASS" signature="dataProviderTest(java.lang.String, java.lang.String)[pri:0, instance:dataProvider.ProvideData@7a1ebcd8]" name="dataProviderTest" duration-ms="1" started-at="2018-09-01T10:47:12Z" data-provider="LoginData" finished-at="2018-09-01T10:47:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderTest -->
+        <test-method status="PASS" signature="dataProviderTest(java.lang.String, java.lang.String)[pri:0, instance:dataProvider.ProvideData@7a1ebcd8]" name="dataProviderTest" duration-ms="2" started-at="2018-09-01T10:47:12Z" data-provider="LoginData" finished-at="2018-09-01T10:47:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderTest -->
+      </class> <!-- dataProvider.ProvideData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
