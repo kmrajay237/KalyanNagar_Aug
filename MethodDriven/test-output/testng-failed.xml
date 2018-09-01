@@ -1,37 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Social Networking Suite]" parallel="tests">
-  <test thread-count="5" name="Social Networking Test In Edge(failed)" parallel="tests">
-    <parameter name="MyBrowser" value="edge"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="scripts.TestLinkedin">
+      <class name="objectRepo.TestClass">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="LinkedinCheck"/>
-          <include name="launchBrowser"/>
+          <include name="testChrome"/>
         </methods>
-      </class> <!-- scripts.TestLinkedin -->
-      <class name="scripts.TestFacebook">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="FacebookCheck"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- scripts.TestFacebook -->
-      <class name="scripts.TestInstagram">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-          <include name="InstagramCheck"/>
-        </methods>
-      </class> <!-- scripts.TestInstagram -->
-      <class name="scripts.TestTwitter">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-          <include name="TwitterCheck"/>
-        </methods>
-      </class> <!-- scripts.TestTwitter -->
+      </class> <!-- objectRepo.TestClass -->
     </classes>
-  </test> <!-- Social Networking Test In Edge(failed) -->
-</suite> <!-- Failed suite [Social Networking Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
