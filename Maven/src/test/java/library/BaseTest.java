@@ -8,8 +8,11 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import com.aventstack.extentreports.ExtentReports;
 public class BaseTest implements Constants{
 	public WebDriver driver;
+	public ExtentReports extent;
 	@BeforeMethod
 	public void launchBrowser() {
 		System.setProperty(Chrome_Key,Chrome_Value);
@@ -28,5 +31,5 @@ public class BaseTest implements Constants{
 		}
 		driver.close();
 	}
-
+	
 }

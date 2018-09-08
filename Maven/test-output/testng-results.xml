@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
+<testng-results skipped="6" failed="2" ignored="0" total="10" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[Test Fail]]>
+    </line>
     <line>
       <![CDATA[Screen Shot Taken]]>
     </line>
@@ -14,16 +17,16 @@
       <![CDATA[Screen Shot Taken]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="35115" started-at="2018-09-02T11:37:14Z" finished-at="2018-09-02T11:37:49Z">
+  <suite name="Suite" duration-ms="111132" started-at="2018-09-08T11:39:40Z" finished-at="2018-09-08T11:41:31Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="35115" started-at="2018-09-02T11:37:14Z" finished-at="2018-09-02T11:37:49Z">
+    <test name="Test" duration-ms="111132" started-at="2018-09-08T11:39:40Z" finished-at="2018-09-08T11:41:31Z">
       <class name="script.TestLinkedin">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:script.TestLinkedin@77cd7a0]" name="launchBrowser" is-config="true" duration-ms="4243" started-at="2018-09-02T11:37:40Z" finished-at="2018-09-02T11:37:45Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:script.TestLinkedin@358c99f5]" name="launchBrowser" is-config="true" duration-ms="4285" started-at="2018-09-08T11:40:55Z" finished-at="2018-09-08T11:41:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="FAIL" signature="LinkedinCheck()[pri:0, instance:script.TestLinkedin@77cd7a0]" name="LinkedinCheck" duration-ms="1854" started-at="2018-09-02T11:37:45Z" finished-at="2018-09-02T11:37:46Z">
+        <test-method status="SKIP" signature="LinkedinCheck()[pri:0, instance:script.TestLinkedin@358c99f5]" name="LinkedinCheck" duration-ms="2335" started-at="2018-09-08T11:41:00Z" finished-at="2018-09-08T11:41:02Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [LinkedIn1: Log In or Sign Up] but found [LinkedIn: Log In or Sign Up]]]>
@@ -68,11 +71,191 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LinkedinCheck -->
-        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.TestLinkedin@77cd7a0]" name="closeBrowser" is-config="true" duration-ms="2869" started-at="2018-09-02T11:37:47Z" finished-at="2018-09-02T11:37:49Z">
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.TestLinkedin@358c99f5]" name="closeBrowser" is-config="true" duration-ms="2312" started-at="2018-09-08T11:41:02Z" finished-at="2018-09-08T11:41:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LinkedinCheck status=FAILURE method=TestLinkedin.LinkedinCheck()[pri:0, instance:script.TestLinkedin@77cd7a0] output={null}]]]>
+                <![CDATA[[TestResult name=LinkedinCheck status=SKIP method=TestLinkedin.LinkedinCheck()[pri:0, instance:script.TestLinkedin@358c99f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:script.TestLinkedin@358c99f5]" name="launchBrowser" is-config="true" duration-ms="4299" started-at="2018-09-08T11:41:04Z" finished-at="2018-09-08T11:41:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="SKIP" signature="LinkedinCheck()[pri:0, instance:script.TestLinkedin@358c99f5]" name="LinkedinCheck" duration-ms="1991" started-at="2018-09-08T11:41:09Z" finished-at="2018-09-08T11:41:11Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [LinkedIn1: Log In or Sign Up] but found [LinkedIn: Log In or Sign Up]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [LinkedIn1: Log In or Sign Up] but found [LinkedIn: Log In or Sign Up]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at script.TestLinkedin.LinkedinCheck(TestLinkedin.java:23)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LinkedinCheck -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.TestLinkedin@358c99f5]" name="closeBrowser" is-config="true" duration-ms="2311" started-at="2018-09-08T11:41:11Z" finished-at="2018-09-08T11:41:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LinkedinCheck status=SKIP method=TestLinkedin.LinkedinCheck()[pri:0, instance:script.TestLinkedin@358c99f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:script.TestLinkedin@358c99f5]" name="launchBrowser" is-config="true" duration-ms="4379" started-at="2018-09-08T11:41:13Z" finished-at="2018-09-08T11:41:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="SKIP" signature="LinkedinCheck()[pri:0, instance:script.TestLinkedin@358c99f5]" name="LinkedinCheck" duration-ms="2095" started-at="2018-09-08T11:41:17Z" finished-at="2018-09-08T11:41:19Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [LinkedIn1: Log In or Sign Up] but found [LinkedIn: Log In or Sign Up]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [LinkedIn1: Log In or Sign Up] but found [LinkedIn: Log In or Sign Up]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at script.TestLinkedin.LinkedinCheck(TestLinkedin.java:23)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LinkedinCheck -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.TestLinkedin@358c99f5]" name="closeBrowser" is-config="true" duration-ms="2315" started-at="2018-09-08T11:41:19Z" finished-at="2018-09-08T11:41:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LinkedinCheck status=SKIP method=TestLinkedin.LinkedinCheck()[pri:0, instance:script.TestLinkedin@358c99f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:script.TestLinkedin@358c99f5]" name="launchBrowser" is-config="true" duration-ms="4571" started-at="2018-09-08T11:41:22Z" finished-at="2018-09-08T11:41:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="FAIL" signature="LinkedinCheck()[pri:0, instance:script.TestLinkedin@358c99f5]" name="LinkedinCheck" duration-ms="2137" started-at="2018-09-08T11:41:26Z" finished-at="2018-09-08T11:41:28Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [LinkedIn1: Log In or Sign Up] but found [LinkedIn: Log In or Sign Up]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [LinkedIn1: Log In or Sign Up] but found [LinkedIn: Log In or Sign Up]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at script.TestLinkedin.LinkedinCheck(TestLinkedin.java:23)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LinkedinCheck -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.TestLinkedin@358c99f5]" name="closeBrowser" is-config="true" duration-ms="2882" started-at="2018-09-08T11:41:28Z" finished-at="2018-09-08T11:41:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LinkedinCheck status=FAILURE method=TestLinkedin.LinkedinCheck()[pri:0, instance:script.TestLinkedin@358c99f5] output={null}]]]>
               </value>
             </param>
           </params>
@@ -84,22 +267,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- closeBrowser -->
       </class> <!-- script.TestLinkedin -->
       <class name="script.TestInstagram">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:script.TestInstagram@1a968a59]" name="launchBrowser" is-config="true" duration-ms="4298" started-at="2018-09-02T11:37:25Z" finished-at="2018-09-02T11:37:30Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:script.TestInstagram@14ec4505]" name="launchBrowser" is-config="true" duration-ms="4356" started-at="2018-09-08T11:40:39Z" finished-at="2018-09-08T11:40:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="InstagramCheck()[pri:0, instance:script.TestInstagram@1a968a59]" name="InstagramCheck" duration-ms="2372" started-at="2018-09-02T11:37:30Z" finished-at="2018-09-02T11:37:32Z">
+        <test-method status="PASS" signature="InstagramCheck()[pri:0, instance:script.TestInstagram@14ec4505]" name="InstagramCheck" duration-ms="2322" started-at="2018-09-08T11:40:44Z" finished-at="2018-09-08T11:40:46Z">
           <reporter-output>
             <line>
               <![CDATA[Title is matching]]>
             </line>
           </reporter-output>
         </test-method> <!-- InstagramCheck -->
-        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.TestInstagram@1a968a59]" name="closeBrowser" is-config="true" duration-ms="2309" started-at="2018-09-02T11:37:32Z" finished-at="2018-09-02T11:37:34Z">
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.TestInstagram@14ec4505]" name="closeBrowser" is-config="true" duration-ms="2313" started-at="2018-09-08T11:40:46Z" finished-at="2018-09-08T11:40:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=InstagramCheck status=SUCCESS method=TestInstagram.InstagramCheck()[pri:0, instance:script.TestInstagram@1a968a59] output=Title is matching]]]>
+                <![CDATA[[TestResult name=InstagramCheck status=SUCCESS method=TestInstagram.InstagramCheck()[pri:0, instance:script.TestInstagram@14ec4505] output=Title is matching]]]>
               </value>
             </param>
           </params>
@@ -108,22 +291,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- closeBrowser -->
       </class> <!-- script.TestInstagram -->
       <class name="script.TestTwitter">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:script.TestTwitter@4667ae56]" name="launchBrowser" is-config="true" duration-ms="4270" started-at="2018-09-02T11:37:34Z" finished-at="2018-09-02T11:37:39Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:script.TestTwitter@53ca01a2]" name="launchBrowser" is-config="true" duration-ms="4293" started-at="2018-09-08T11:40:48Z" finished-at="2018-09-08T11:40:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="TwitterCheck()[pri:0, instance:script.TestTwitter@4667ae56]" name="TwitterCheck" duration-ms="1796" started-at="2018-09-02T11:37:39Z" finished-at="2018-09-02T11:37:40Z">
+        <test-method status="PASS" signature="TwitterCheck()[pri:0, instance:script.TestTwitter@53ca01a2]" name="TwitterCheck" duration-ms="2611" started-at="2018-09-08T11:40:53Z" finished-at="2018-09-08T11:40:55Z">
           <reporter-output>
             <line>
               <![CDATA[Title is matching]]>
             </line>
           </reporter-output>
         </test-method> <!-- TwitterCheck -->
-        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.TestTwitter@4667ae56]" name="closeBrowser" is-config="true" duration-ms="103" started-at="2018-09-02T11:37:40Z" finished-at="2018-09-02T11:37:40Z">
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.TestTwitter@53ca01a2]" name="closeBrowser" is-config="true" duration-ms="72" started-at="2018-09-08T11:40:55Z" finished-at="2018-09-08T11:40:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TwitterCheck status=SUCCESS method=TestTwitter.TwitterCheck()[pri:0, instance:script.TestTwitter@4667ae56] output=Title is matching]]]>
+                <![CDATA[[TestResult name=TwitterCheck status=SUCCESS method=TestTwitter.TwitterCheck()[pri:0, instance:script.TestTwitter@53ca01a2] output=Title is matching]]]>
               </value>
             </param>
           </params>
@@ -132,11 +315,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- closeBrowser -->
       </class> <!-- script.TestTwitter -->
       <class name="script.TestFacebook">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:script.TestFacebook@548e7350]" name="launchBrowser" is-config="true" duration-ms="4684" started-at="2018-09-02T11:37:14Z" finished-at="2018-09-02T11:37:19Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:script.TestFacebook@e50a6f6]" name="launchBrowser" is-config="true" duration-ms="4798" started-at="2018-09-08T11:39:40Z" finished-at="2018-09-08T11:39:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="FAIL" signature="FacebookCheck()[pri:0, instance:script.TestFacebook@548e7350]" name="FacebookCheck" duration-ms="3672" started-at="2018-09-02T11:37:19Z" finished-at="2018-09-02T11:37:23Z">
+        <test-method status="SKIP" signature="FacebookCheck()[pri:0, instance:script.TestFacebook@e50a6f6]" name="FacebookCheck" duration-ms="3189" started-at="2018-09-08T11:39:45Z" finished-at="2018-09-08T11:39:48Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Facebook1 – log in or sign up] but found [Facebook – log in or sign up]]]>
@@ -181,11 +364,190 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FacebookCheck -->
-        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.TestFacebook@548e7350]" name="closeBrowser" is-config="true" duration-ms="2619" started-at="2018-09-02T11:37:23Z" finished-at="2018-09-02T11:37:25Z">
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.TestFacebook@e50a6f6]" name="closeBrowser" is-config="true" duration-ms="2315" started-at="2018-09-08T11:39:48Z" finished-at="2018-09-08T11:39:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=FacebookCheck status=FAILURE method=TestFacebook.FacebookCheck()[pri:0, instance:script.TestFacebook@548e7350] output={null}]]]>
+                <![CDATA[[TestResult name=FacebookCheck status=SKIP method=TestFacebook.FacebookCheck()[pri:0, instance:script.TestFacebook@e50a6f6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:script.TestFacebook@e50a6f6]" name="launchBrowser" is-config="true" duration-ms="4255" started-at="2018-09-08T11:39:50Z" finished-at="2018-09-08T11:39:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="SKIP" signature="FacebookCheck()[pri:0, instance:script.TestFacebook@e50a6f6]" name="FacebookCheck" duration-ms="3997" started-at="2018-09-08T11:39:55Z" finished-at="2018-09-08T11:39:59Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Facebook1 – log in or sign up] but found [Facebook – log in or sign up]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Facebook1 – log in or sign up] but found [Facebook – log in or sign up]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at script.TestFacebook.FacebookCheck(TestFacebook.java:23)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FacebookCheck -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.TestFacebook@e50a6f6]" name="closeBrowser" is-config="true" duration-ms="2314" started-at="2018-09-08T11:39:59Z" finished-at="2018-09-08T11:40:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FacebookCheck status=SKIP method=TestFacebook.FacebookCheck()[pri:0, instance:script.TestFacebook@e50a6f6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:script.TestFacebook@e50a6f6]" name="launchBrowser" is-config="true" duration-ms="4343" started-at="2018-09-08T11:40:01Z" finished-at="2018-09-08T11:40:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="SKIP" signature="FacebookCheck()[pri:0, instance:script.TestFacebook@e50a6f6]" name="FacebookCheck" duration-ms="21189" started-at="2018-09-08T11:40:05Z" finished-at="2018-09-08T11:40:27Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at script.TestFacebook.FacebookCheck(TestFacebook.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test Fail]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- FacebookCheck -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.TestFacebook@e50a6f6]" name="closeBrowser" is-config="true" duration-ms="2313" started-at="2018-09-08T11:40:27Z" finished-at="2018-09-08T11:40:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FacebookCheck status=SKIP method=TestFacebook.FacebookCheck()[pri:0, instance:script.TestFacebook@e50a6f6] output=Test Fail]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:script.TestFacebook@e50a6f6]" name="launchBrowser" is-config="true" duration-ms="4281" started-at="2018-09-08T11:40:29Z" finished-at="2018-09-08T11:40:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="FAIL" signature="FacebookCheck()[pri:0, instance:script.TestFacebook@e50a6f6]" name="FacebookCheck" duration-ms="3550" started-at="2018-09-08T11:40:33Z" finished-at="2018-09-08T11:40:37Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Facebook1 – log in or sign up] but found [Facebook – log in or sign up]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Facebook1 – log in or sign up] but found [Facebook – log in or sign up]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at script.TestFacebook.FacebookCheck(TestFacebook.java:23)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:838)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1009)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FacebookCheck -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.TestFacebook@e50a6f6]" name="closeBrowser" is-config="true" duration-ms="2661" started-at="2018-09-08T11:40:37Z" finished-at="2018-09-08T11:40:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FacebookCheck status=FAILURE method=TestFacebook.FacebookCheck()[pri:0, instance:script.TestFacebook@e50a6f6] output={null}]]]>
               </value>
             </param>
           </params>

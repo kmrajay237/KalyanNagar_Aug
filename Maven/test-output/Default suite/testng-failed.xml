@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="script.TestFacebook">
+      <class name="report.Test1">
         <methods>
-          <include name="FacebookCheck"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
+          <include name="launch"/>
+          <include name="t2"/>
+          <include name="CLOSE"/>
         </methods>
-      </class> <!-- script.TestFacebook -->
+      </class> <!-- report.Test1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

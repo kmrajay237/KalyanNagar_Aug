@@ -9,9 +9,9 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">2</td><td class="num">35,115</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num attn">6</td><td class="num attn">2</td><td class="num">111,132</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">script.TestFacebook</td><td><a href="#m0">FacebookCheck</a></td><td rowspan="1">1535888239454</td><td rowspan="1">3672</td></tr><tr class="failedodd"><td rowspan="1">script.TestLinkedin</td><td><a href="#m1">LinkedinCheck</a></td><td rowspan="1">1535888265145</td><td rowspan="1">1854</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">script.TestInstagram</td><td><a href="#m2">InstagramCheck</a></td><td rowspan="1">1535888250049</td><td rowspan="1">2372</td></tr><tr class="passedodd"><td rowspan="1">script.TestTwitter</td><td><a href="#m3">TwitterCheck</a></td><td rowspan="1">1535888259002</td><td rowspan="1">1796</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">script.TestFacebook</td><td><a href="#m0">FacebookCheck</a></td><td rowspan="1">1536406833640</td><td rowspan="1">3550</td></tr><tr class="failedodd"><td rowspan="1">script.TestLinkedin</td><td><a href="#m1">LinkedinCheck</a></td><td rowspan="1">1536406886729</td><td rowspan="1">2137</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">script.TestFacebook</td><td><a href="#m2">FacebookCheck</a></td><td rowspan="3">1536406805853</td><td rowspan="3">21189</td></tr><tr class="skippedeven"><td><a href="#m3">FacebookCheck</a></td></tr><tr class="skippedeven"><td><a href="#m4">FacebookCheck</a></td></tr><tr class="skippedodd"><td rowspan="3">script.TestLinkedin</td><td><a href="#m5">LinkedinCheck</a></td><td rowspan="3">1536406860113</td><td rowspan="3">2335</td></tr><tr class="skippedodd"><td><a href="#m6">LinkedinCheck</a></td></tr><tr class="skippedodd"><td><a href="#m7">LinkedinCheck</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">script.TestInstagram</td><td><a href="#m8">InstagramCheck</a></td><td rowspan="1">1536406844212</td><td rowspan="1">2322</td></tr><tr class="passedodd"><td rowspan="1">script.TestTwitter</td><td><a href="#m9">TwitterCheck</a></td><td rowspan="1">1536406853144</td><td rowspan="1">2611</td></tr></tbody>
 </table>
 <h2>Test</h2><h3 id="m0">script.TestFacebook#FacebookCheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Facebook1 – log in or sign up] but found [Facebook – log in or sign up]
 	at script.TestFacebook.FacebookCheck(TestFacebook.java:23)
@@ -19,7 +19,25 @@
 <h3 id="m1">script.TestLinkedin#LinkedinCheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [LinkedIn1: Log In or Sign Up] but found [LinkedIn: Log In or Sign Up]
 	at script.TestLinkedin.LinkedinCheck(TestLinkedin.java:23)
 ... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">script.TestInstagram#InstagramCheck</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matching</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">script.TestTwitter#TwitterCheck</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matching</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">script.TestFacebook#FacebookCheck</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Fail</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at script.TestFacebook.FacebookCheck(TestFacebook.java:27)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">script.TestFacebook#FacebookCheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Facebook1 – log in or sign up] but found [Facebook – log in or sign up]
+	at script.TestFacebook.FacebookCheck(TestFacebook.java:23)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">script.TestFacebook#FacebookCheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Facebook1 – log in or sign up] but found [Facebook – log in or sign up]
+	at script.TestFacebook.FacebookCheck(TestFacebook.java:23)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">script.TestLinkedin#LinkedinCheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [LinkedIn1: Log In or Sign Up] but found [LinkedIn: Log In or Sign Up]
+	at script.TestLinkedin.LinkedinCheck(TestLinkedin.java:23)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">script.TestLinkedin#LinkedinCheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [LinkedIn1: Log In or Sign Up] but found [LinkedIn: Log In or Sign Up]
+	at script.TestLinkedin.LinkedinCheck(TestLinkedin.java:23)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">script.TestLinkedin#LinkedinCheck</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [LinkedIn1: Log In or Sign Up] but found [LinkedIn: Log In or Sign Up]
+	at script.TestLinkedin.LinkedinCheck(TestLinkedin.java:23)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">script.TestInstagram#InstagramCheck</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matching</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">script.TestTwitter#TwitterCheck</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Title is matching</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
