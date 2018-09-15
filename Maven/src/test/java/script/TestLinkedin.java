@@ -18,7 +18,7 @@ public class TestLinkedin extends BaseTest {
 			gpo.searchBox().sendKeys(Keys.ENTER);
 			SearchResultPO spo = new SearchResultPO(driver);
 			spo.linkedin().click();
-			String expTitle = "LinkedIn1: Log In or Sign Up";
+			String expTitle = "LinkedIn: Log In or Sign Up";
 			String actTitle = driver.getTitle();
 			Assert.assertEquals(actTitle, expTitle);
 			Reporter.log("Title is matching", true);

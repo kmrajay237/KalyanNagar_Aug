@@ -18,7 +18,7 @@ public class TestFacebook extends BaseTest{
 			gpo.searchBox().sendKeys(Keys.ENTER);
 			SearchResultPO spo = new SearchResultPO(driver);
 			spo.facebook().click();
-			String expTitle = "Facebook1 – log in or sign up";
+			String expTitle = "Facebook – log in or sign up";
 			String actTitle = driver.getTitle();
 			Assert.assertEquals(actTitle, expTitle);
 			Reporter.log("Title is matching", true);
