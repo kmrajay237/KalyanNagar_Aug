@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11885" started-at="2018-09-15T11:49:51Z" finished-at="2018-09-15T11:50:03Z">
+  <suite name="Default suite" duration-ms="14462" started-at="2018-09-16T09:46:02Z" finished-at="2018-09-16T09:46:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11885" started-at="2018-09-15T11:49:51Z" finished-at="2018-09-15T11:50:03Z">
-      <class name="usingRobotClass.MoveMousePointer">
-        <test-method status="PASS" signature="mousePointer()[pri:0, instance:usingRobotClass.MoveMousePointer@4d41cee]" name="mousePointer" duration-ms="11867" started-at="2018-09-15T11:49:51Z" finished-at="2018-09-15T11:50:03Z">
+    <test name="Default test" duration-ms="14462" started-at="2018-09-16T09:46:02Z" finished-at="2018-09-16T09:46:17Z">
+      <class name="sikuli.FacebookTestUsingSikuli">
+        <test-method status="PASS" signature="Facebook()[pri:0, instance:sikuli.FacebookTestUsingSikuli@2833cc44]" name="Facebook" duration-ms="14444" started-at="2018-09-16T09:46:02Z" finished-at="2018-09-16T09:46:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mousePointer -->
-      </class> <!-- usingRobotClass.MoveMousePointer -->
+        </test-method> <!-- Facebook -->
+      </class> <!-- sikuli.FacebookTestUsingSikuli -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
